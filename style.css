@@ -1,0 +1,543 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #FFF;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+/* Header Section */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  
+}
+
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  height: 76px;
+  background-color: rgb(0, 0, 0, 1);
+  align-items: center;
+}
+
+header img {
+  position: relative;
+  height: auto;
+  width: 7.5%;
+  margin-top: 4vw;
+
+}
+
+nav {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 20px;
+  background-color: rgb(0, 0, 0, 1);
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: rgb(255, 228, 108);
+  transition: color 0.5s;
+}
+
+nav span {
+  
+  display: inline-block;
+  padding: 0 20px 10px 10px;
+}
+
+/* Video Section */
+
+ .main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    margin: auto;
+  }
+
+
+  .overlay {
+    position:absolute;
+    right: 25%;
+    left: 25%;
+    top: 50%;
+    z-index:1;
+}
+
+
+  .overlay span {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+   h2 {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  .video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  } 
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+  }
+
+
+
+  #video {
+    height: 700px;
+    padding-top: 70px;
+  }
+  
+  
+	.hero-home__video {
+    position: absolute;
+
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+	}
+	
+	video {
+    object-fit: contain;
+}
+
+.hero {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 100px;
+    color: #fff;
+    background: #3e3e3e;
+    overflow: hidden;
+}
+
+  /* Content Button */
+  
+  .book-button {
+    width: 160px;
+    padding: 20px;
+    margin: 40px auto;
+    border: solid #FFF;
+    border-radius: 4px;
+    color: #FFF;
+    display: block;
+    font-weight: 700;
+  }
+  
+  .book-button:hover {
+    background-color: #FFF;
+    border:  solid #FFF;
+    color: #000;
+    transition: color 0.6s ease-in-out;
+    
+  }
+
+ 
+/* Social Icons */
+
+.social i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+.fa {
+    color: #FFF;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+        line-height: 1;
+    font-size: inherit;
+    padding-top: 16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa:hover {
+  font-size: 20px;
+  transition: font-size 0.5s;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 7%;
+  width: 160px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom:0;
+  overflow-x: hidden;
+  opacity: 1;
+  margin-left: 200px
+  
+}
+
+  /*Flex Grid Row*/
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-column h1 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  margin: 2em;
+
+} 
+
+.first-column span {
+  font-style: italic;
+  font-weight: 500;  
+}
+
+.second-column {
+  padding: 2% 1%;
+  font-family: 'Barlow', sans-serif;
+  font-style: regular;
+  font-size: 1em;
+  font-weight: 400;
+  /*Changed it to auto to have a center align as needed */
+  margin: auto;
+  color: #000;
+}
+
+ .number, .form {
+  color: rgb(38, 217, 230);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.number:hover, .form:hover {
+  color: rgb(255, 184, 31);
+  transition: color 0.5s;
+}
+
+.hashtag {
+  font-weight: 500;
+}
+
+.second-column p {
+  color: #000;
+  text-align: left;
+  margin: 1em;
+  
+}
+
+/* Courses Grid Section */
+
+.taster {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #000;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.masonry { 
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap:10px;
+  padding:5vw;
+  -webkit-box-pack: justify;
+  min-width: 0;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  /* padding-left: 10%; */
+  color: #ffffff;
+  background-color: #000;
+}
+
+.masonry-brick {
+  transform: translate3d(0, var(--translateY), 0);
+  will-change: transform;
+  backface-visibility: hidden;
+  cursor: pointer;
+  text-align: justify; 
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.masonry-brick img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.5; 
+}
+
+.masonry-brick:hover img {
+  opacity: 1;
+}
+
+.masonry-brick:hover {
+  transform: scale(.985) translateZ(0);
+}
+
+.masonry-brick .title  {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #bebebe;
+}
+
+.masonry-brick .description {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.masonry-brick .read-more {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 0.6em;
+  color: #bebebe;
+  opacity: 0;
+}
+
+.masonry-brick:hover .read-more {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+/* Email Form */
+
+
+form {
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  background-color: rgb(0, 81, 255);
+
+}
+
+form p {
+  font-size: 0.7em;
+}
+
+input[type=text], input[type=message] {
+    /* width: 20%; */
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    border: solid #FFF;    
+}
+
+input[type=text] {
+  width: 26%;
+}
+
+label {
+  padding-bottom: 1em;
+  display: block;
+  font-size: 3em;
+}
+
+.nr {
+  font-size: 4em;
+  color: rgb(253, 206, 51);
+}
+
+.signupbtn {
+  /* The following line has been removed as it caused problem with button width*/
+  /*width: 160px;*/
+  padding: 20px;
+  margin: 40px auto;
+  text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255);
+  border-radius: 4px;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(38, 217, 230);
+  /* width: 13%; */
+}
+
+.signupbtn:hover {
+   background-color: rgb(253, 206, 51);
+    color:rgb(38, 217, 230);
+    transition: color 0.6s ease-in-out;
+    transition: background-color 0.6s ease-in-out;    
+}
+
+.container {
+    padding: 3em;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    
+}
+
+/* Footer */
+
+footer {
+  background-color: #FFF;
+  color: #000;
+  font-size: 0.7em;
+  
+}
+
+
+html{
+  width:100%;
+}
+
+
+@media(max-width:601px){
+  nav{
+    font-size:19px;
+  }
+  .grid-row {
+    flex-direction: column;
+  }
+  .masonry{
+    grid-template-columns: 1fr;
+  }
+  .nr{
+    font-size:3em;
+  }
+  header img{
+    width:16%;
+  }
+  .first-column h1{
+    font-size:1.6em;
+  }
+  header img {
+    margin-top: 0;
+    width: 13%;
+  }
+  .first-column h1 {
+    margin: 0.64em;
+  }
+}
+
+@media(max-width:532px){
+  .overlay {
+    font-size: 18px;
+    left: 15%;
+    margin-right: 0;
+    margin-left: 0;
+    top: 50%;
+  }
+}
+
+@media(max-width:800px) {
+  header img {
+    width: 14%;
+    margin-top: 5vw;
+  }
+}
+
+@media(max-width:375px) {
+  header img {
+    width: 45%;
+    margin-top: 7vw;
+  }
+  .overlay {
+    left: 22%;
+    font-size: 1em;
+}
+
+  input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media(max-width:414px) {
+  header img {
+      width: 30%;
+      margin-top: 5vw;
+  }
+  .overlay {
+    font-size: 16px;
+    left: 27%;
+  } 
+}
+
+@media(max-width:768px) {
+  header img {
+    width: 15%;
+    margin-top: 5vw;
+}
+
+input[type="text"] {
+  width: 30%;
+}
+}
+
+@media(max-width:360px) {
+  header img {
+    width: 45%;
+    margin-top: 5vw;
+  }
+
+  .book-button {
+    width: 140px;
+  }
+  .overlay {
+    font-size: 14px;
+}
+input[type="text"] {
+  width: 70%;
+}
+}
